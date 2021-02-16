@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'core/style.css' %}">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Personnelle Portfolio">
+    <meta name="keyword" content="portfolio, web design, Django">
+    <meta name="author" content="Kais Mansour">
+    <title>Kais Mansour Portfolio | Welcome</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <img src="../../static/core/images/circle-cropped.png" alt="" height="9%" width="9%">
+        </div>
+        <nav>
+          <ul>
+            <li ><a  href="{% url 'core:acceuil' %}">Home</a></li>
+            <li class="current"><a href="{% url 'core:CV' %}">CV</a></li>
+            <li><a href="{% url 'core:projects' %}">Projects</a></li>
+            <li><a href="{% url 'core:contact' %}">Contact</a></li>
+          </ul>
+        </nav>
+
+      </div>
+      </header>
+    <section id="CV">
+      <div class="container">
+        <img src="../../static/core/images/CV KAIS_MANSOUR-1.jpg" alt="">
+
+
+      </div>
+
+    </section>
+
+
+
+    <footer>
+      <p>Kais Masnour Portfolio, Copyright &copy; 2020</p>
+    </footer>
+
+  </body>
